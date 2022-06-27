@@ -1,0 +1,104 @@
+.fountRegister {
+  background-color: rgba(50, 224, 150, 1);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+.register {
+    width: 521px;
+    height: 259px;
+    margin-left: -9%;
+    margin-top: -46%
+}
+
+.containerRegister {
+    position: absolute;
+    top:56%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    border-radius: 17px;
+    width: 491px;
+    height: 285px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    background-color: rgba(255, 255, 255, 1);;
+}
+.contentRegister{
+    margin-top: 37%;
+    margin-left: 1%;
+    text-align: center;  
+}
+.registrate{
+    font-size: 28px;
+    margin-left: -4%;
+    margin-top: -42%;
+    text-align: center;
+    color: rgba(71, 71, 71, 1);
+    font-family: "Inter", sans-serif;
+}
+.nickname{
+    font-size: 17px;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    font-family: "Inter", sans-serif;
+}
+#nick{
+    margin-top: 3%;
+    margin-left: -76%;
+}
+/*.displayName{
+    border-bottom: 1px solid rgb(4 49 207);
+    height: 32px;
+    width: 413px;
+    font-size: 18px;
+    margin-top: -4px;
+    margin-left: 0%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 100);;
+}*/
+.imput-box{
+    margin:31px auto;
+    width:80%;
+    border-bottom: 1px solid blue ;
+    padding-top:10px ;
+    padding-bottom: 5px;
+
+}
+.imput-box input{
+    width:90%;
+    border:none;
+    outline:none;
+    color: blue;
+    
+}
+.email{
+    margin-top: 3%;
+    margin-left: -35%;
+    font-size: 17px;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    font-family: "Inter", sans-serif;
+}
+.password{
+    margin-top: 3%;
+    margin-left: -33%;
+    font-size: 17px;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    font-family: "Inter", sans-serif;
+}
+.btnregister{
+    cursor: pointer;
+    background-color: #FB727C;
+    border-radius: 25px;
+    border: none;
+    height: 37px;
+    width: 170px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 22px;
+}

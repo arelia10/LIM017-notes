@@ -1,0 +1,127 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing:border-box;
+
+}
+.fount{
+  background-image: url(C:\Users\Arel\Documents\GitHub\LIM017-notes\notes\src\componentes\img\stars.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height:100vh;
+ 
+    
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+.logo{
+  width: 649px;
+    height: 400px;
+    margin-left: -15%;
+    margin-top: -54%;
+}
+.container{    
+  position: absolute;
+  top: 69%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  border-radius: 17px;
+  width: 532px;
+  height: 356px;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  background-color: inherit;
+}
+.content{
+  margin-top: -76px;
+  margin-left: 1%;
+  text-align: center;
+}
+
+.userInfo{
+  border-radius: 100px;
+  border-color: #e6d9ebad;
+  height: 43px;
+  width: 270px;
+  font-size: 18px;
+  margin-top: -9px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 100);
+}
+.userInfor{
+  border-radius: 100px;
+  border-color: #e6d9ebad;
+  height: 43px;
+  width: 270px;
+  font-size: 18px;
+  margin-top: -9px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 100);
+}
+.userInfo::placeholder {
+  color: rgba(174, 174, 174, 1);
+  padding-right: 188px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 100);
+}
+.userInfor::placeholder {
+  color: rgba(174, 174, 174, 1);
+  padding-right: 157px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 100);
+}
+.eye2{
+  position:absolute;
+  right:27% ;
+  transform: translateY(10%);
+}
+
+.buttonLogin{
+  cursor: pointer;
+    background-color: #FB727C;
+    border-radius: 25px;
+    border: none;
+    height: 32px;
+    width: 169px;
+    color: white;
+    font-size: 21px;
+    text-align: center;
+    margin-top: 11px;
+}
+.ingresoGoogle{
+  margin-top: 11px;
+  color:#8E8989;
+  font-size: 18px
+}
+.icongmail{
+  height: 52px;
+  width: 95px;
+  align-items: center;
+}
+.btngamil{
+  background-color: inherit;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+.createLogin {
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  color: #8E8989;
+}
+.buttonRegister {
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+  color: rgba(4, 49, 207, 1);
+  font-size: 16px;
+  font-weight: bold;
+}
+
