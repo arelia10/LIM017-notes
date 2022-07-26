@@ -1,0 +1,43 @@
+.containerHead{
+    background-color:rgba(50, 224, 150, 1);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-attachment: fixed;
+  }
+.iconHead{
+  height: 108px;
+  width: 142px;
+  padding: 13px;
+}
+.ContainerUser{
+  right: 69%;
+  width: 34%;
+  padding: 9px;
+  text-align:center;
+  border-radius: 5%;
+  
+}
+.User{
+  font-size: 40px;
+  color: white;
+ 
+}
+.ContainerOut{
+  left: auto;
+  width:11%;
+  padding: 8px;
+}
+.btnOut{
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  padding-right: 13px;
+  float: right;
+}
+.iconOut{
+  height: 88px;
+  width: 94px;
+  padding: 13px;
+}
+

@@ -1,0 +1,168 @@
+.containerHome{
+    background-image: url(C:\Users\Arel\Documents\GitHub\LIM017-notes\notes\src\componentes\img\love.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height:100vh;
+   
+    
+}
+.containerNot{
+    position: absolute;
+    top: 30%;
+    left: 23%;
+    transform: translate(35%, -34%);
+    border-radius: 19px;
+    width: 33%;
+    height: 30%;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    background-color: #D6EAF8;
+}
+.imputLitle{
+    border-color: #e6d9ebad;
+    height: 16%;
+    width: 40%;
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 100);   
+}
+.imputPosts{
+    border-color: #e6d9ebad;
+    height: 41%;
+    width: 85%;
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 100);
+}
+.btnPrimary{
+    cursor: pointer;
+    background-color: #FB727C;
+    border-radius: 25px;
+    border: none;
+    height: 23px;
+    width: 106px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 0px;
+}
+/*.notesLis{
+    
+    position: absolute;
+    background-color: orange;
+    width: 94%;
+    height: 46%;
+     grid-gap: 4px; 
+    top: 28%; 
+     left: 21%; *
+    transform: translate(3%, 73%);
+    
+    
+}*/
+.contentList{
+   
+    display: flex;
+    width: 84%;
+    /* height: 46%; */
+    grid-gap: 7px;
+    /* top: 28%; */
+    /* left: 21%; */
+    transform: translate(12%, 146%);
+    background-color: inherit;
+    
+    
+
+}
+.notesContent{
+    
+    background-color:  #FB727C;
+}
+
+.closeNote{
+    cursor: pointer;
+    background-color: #FB727C;
+    border-radius: 25px;
+    border: none;
+    height: 28px;
+    width: 120px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 11px;
+}
+
+.editNote{
+    height: 38px;
+    width: 46px;
+  align-items: center;
+}
+.closeNote{
+    height: 37px;
+    width: 47px;
+  align-items: center;
+
+}
+.contentBtnClose{
+    background-color: inherit;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    margin-top: 38%;
+    margin-left: -33%;
+  }
+.contentBtnEdit{
+    background-color:  #FB727C;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    margin-top: 69%;
+    margin-left: -54%;
+  }
+  .btnEdit{
+    transform: translate(16vh, 23vh);
+    width: 3%;
+    
+  }
+  .btnClose{
+    transform: translate(24vh, 16vh);
+    width: 2%;
+
+  }
+  .editTitleLoad{
+    border-color: #e6d9ebad;
+    height: 5vh;
+    width: 21vh;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 100);
+    font-family: 'Inter', sans-serif;
+    transform: translate(11vh, -23vh);
+} 
+
+.editDescriptionLoad{
+    border-color: #e6d9ebad;
+    height: 15vh;
+    width: 35vh;
+    font-size: 20px;
+    /* margin-top: 2vh; */
+    background-color: rgba(255, 255, 255, 100);
+    margin-left: -13vh;
+    font-family: 'Inter', sans-serif;
+    transform: translate(-4vh, -5vh);
+}
+/*.containerPostsit{
+   
+    transform: translate(0%, -45%);
+    border-radius: 19px; 
+     width: 33%; 
+     height: 25%; 
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    background-color: rgba(21, 7, 77, 0.349);
+}*/

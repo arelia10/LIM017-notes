@@ -1,7 +1,8 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.9/firebase-app.js';
-import { getAuth } from 'https://www.gstatic.com/firebasejs/9.6.9/firebase-auth.js';
-//import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js';
+import { initializeApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
+import { getFirestore,updateDoc, doc } from 'firebase/firestore';
+//import { getFirestore} from 'firebase/firestore';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 // Your web app's Firebase configuration
@@ -19,4 +20,7 @@ const firebaseConfig = {
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
-//export const db = getFirestore(app);
+export const db = getFirestore(app);
+export const updateNote = async (id, title, post) => {
+  console.log(id, title,post);
+  await updateDoc(doc(db, 'notes', id), {title:title, post: post})}
