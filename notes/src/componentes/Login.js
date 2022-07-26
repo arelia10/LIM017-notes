@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useAuth } from "../context/authContext";
+import {  login,loginWithGoogle } from "../context/authContext";
 import { useNavigate, Link } from "react-router-dom";
 import { Icon } from 'react-icons-kit';
 import { eyeOff } from 'react-icons-kit/feather/eyeOff';
@@ -23,7 +23,6 @@ export function Login() {
     email: "",
     password: "",
   });
-  const { login, loginWhitGoogle } = useAuth();
   const navigate = useNavigate();
   const [error, setError] = useState();
 
@@ -32,16 +31,18 @@ export function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setError("");
     try {
-      await login(user.email, user.password);
-      navigate("/");
+      const homeUser=await login(user.email, user.password);
+      localStorage.setItem('email', homeUser.user.email);
+      navigate('/');
     } catch (error) {
       setError(error.message);
     }
   };
   const handleGoogleSignin = async () => {
     try {
-      await loginWhitGoogle();
+      await loginWithGoogle();
       navigate("/");
     } catch (error) {
       setError(error.message);
@@ -66,12 +67,12 @@ export function Login() {
               className="userInfo"
               type="email"
               name="email"
+              id='email'
               placeholder="Email"
               onChange={handleChange}
             />
             <br></br>
             <br></br>
-            <label htmlFor="password"></label>
             <span className= "eye2" onClick={handleToggle} style={{ color: 'rgba(142, 137, 137, 1)' }}><Icon  icon={icon} size={20} /></span>
 
             <input
@@ -84,7 +85,7 @@ export function Login() {
             />
             <br></br>
             <button className="buttonLogin">Iniciar Sesión</button>
-            <p class="ingresoGoogle">O bien ingresa con...</p>
+            <p className="ingresoGoogle">O bien ingresa con...</p>
             <button className="btngamil" onClick={handleGoogleSignin}>
               {
                 <img
@@ -106,3 +107,4 @@ export function Login() {
     </main>
   );
 }
+export default Login;
